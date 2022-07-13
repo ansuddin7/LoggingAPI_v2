@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Logger.API</name>
+    </assembly>
+    <members>
+        <member name="T:Logger.API.Controllers.LogController">
+            <summary>
+            Logging API that supports bulk logging and single entry logging.
+            </summary>
+        </member>
+        <member name="M:Logger.API.Controllers.LogController.AddLogEntry(Logger.Data.DTO.LogEntry)">
+            <summary>
+            Add a single log entry
+            </summary>
+            <param name="logEntry"></param>
+            <response code="204">The request was successful</response>
+        </member>
+        <member name="M:Logger.API.Controllers.LogController.AddLogEntries(System.Collections.Generic.List{Logger.Data.DTO.LogEntry})">
+            <summary>
+            Log multiple entries
+            </summary>
+            <param name="logEntries"></param>
+            <response code="204">The request was successful</response>
+        </member>
+    </members>
+</doc>
